@@ -6,6 +6,8 @@ body {
     background-color: #f1f3f4;
     font-family: sans-serif;
 }
+
+/* -----------------------------------------Top Nav Bar----------------------------------------------------- */
 .top-nav-bar {
     height: 57px;
     position: sticky;
@@ -75,7 +77,7 @@ body {
 .fa-shopping-basket {
     margin-right: 5px;
 }
-@media only screen and (max-width:950px) {
+@media only screen and (max-width:980px) {
     .top-nav-bar {
         height: 118px;
         border-bottom: 0;
@@ -93,5 +95,71 @@ body {
     .menu-bar ul li {
         height: 57px;
         width: 100%;
+    }
+}
+
+/* ---------------------------------------------------Side Menu--------------------------------------------------------------------------- */
+.side-menu {
+    height: 75%;
+    width: 15%;
+    font-size: 14px;
+    float: left;
+    background-color: #ddd;
+    z-index: 2;
+}
+.side-menu ul {
+    margin-left: 10px;
+}
+.side-menu ul li {
+    list-style: none;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.side-menu ul li:hover {
+    color: orange;
+}
+.side-menu ul li ul {
+    display: none;
+    z-index: 10;
+    top: 77px;
+}
+.side-menu ul li:hover ul {
+    display: block;
+    height: 400px;
+    margin-left: 14%;
+    padding: 0 100px 10px 10px;
+    position: fixed;
+    background: #ececec;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
+}
+.fa-angle-right {
+    margin-top: 4px;
+    margin-right: 8px;
+    float: right;
+}
+#menu-btn, #close-btn {
+    margin: 10px;
+    font-size: 30px;
+    color: orange;
+    display: none;
+}
+@media only screen and (max-width:980px) {
+    .side-menu {
+        width: 34%;
+        z-index: 20;
+        top: 133px;
+        font-size: 10px;
+        position: fixed;
+        display:none;
+    }
+    .side-menu ul li ul {
+        top: 133px;
+    }
+    .side-menu ul li:hover ul {
+        margin-left: 31%;
+    }
+    #menu-btn {
+        display: block;
     }
 }
