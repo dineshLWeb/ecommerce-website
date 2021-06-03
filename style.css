@@ -272,3 +272,12 @@ body {
     font-size: 10px;
     color: orange;
 }
+.product-bottom h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.product-bottom h5 {
+    font-size: 15px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
