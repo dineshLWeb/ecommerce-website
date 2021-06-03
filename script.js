@@ -9,3 +9,4 @@ function closeMenu () {
     document.getElementById("menu-btn").style.display = "block";
     document.getElementById("close-btn").style.display = "none";
 }
+
